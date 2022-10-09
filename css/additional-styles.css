@@ -1,0 +1,112 @@
+.custom-shape-divider-top-1662049434 {
+    position: absolute;
+    top: 500vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.contact-warning::placeholder {
+    color: red;
+}
+
+nav > span.material-symbols-outlined {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+#contact .alert-warning {
+    font-size: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: red;
+    background-color: #ffabab;
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #socials {
+        flex-direction: column;
+    }
+
+    #socials .card {
+        width: 35vw;
+        height: 25vw;
+    }
+
+    .slide h1 {
+        font-size: 3em;
+    }
+
+    .slide .container {
+        flex-direction: column;
+    }
+
+    .navigation-manual {
+        bottom: 10vh;
+    }
+
+    nav {
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        transition: background-color 0.5s linear;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 5vh 0;
+    }
+
+    nav ul li a {
+        font-size: 2.5em;
+    }
+
+    nav > span.material-symbols-outlined {
+        display: block;
+        position: fixed;
+        top: 4vh;
+        left: 4vh;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    header .logo-text {
+        right: -700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slide .container img {
+        scale: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex !important;
+    }
+}
