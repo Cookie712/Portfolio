@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Magical Sky</title>
+        <link rel="stylesheet" href="css/landing-page.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/additional-styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+        />
+        <script type="module" src="js/script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <span id="hamburger-menu" class="material-symbols-outlined">
+                menu
+            </span>
+            <a href="#hamburger-menu">Cookie <span>712</span></a>
+            <ul>
+                <li><a class="link" href="#about">About</a></li>
+                <li><a class="link" href="#skills">Skills</a></li>
+                <li><a class="link" href="#socials">Socials</a></li>
+                <li><a class="link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <img id="particles" src="./img/particles.png" />
+            <img id="sun" src="./img/sun.png" />
+            <img id="mountains-front" src="./img/mountains-front.png" />
+            <img id="mountains-behind" src="./img/mountains-behind.png" />
+            <h2 class="logo-text">Magical Sky</h2>
+        </header>
+        <main>
+            <section id="about">
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+                <div class="modal">
+                    <span class="material-symbols-outlined close-button">
+                        close
+                    </span>
+                    <h1>Hey <span>Bro!</span></h1>
+                    My name is <span>David</span>, I'm a self taught developer.
+                    I have been programming since 2020. I love web development
+                    in general, front-end as well as back-end are fascinating
+                    for me. Overtime, I love swimming and also riding a bike.
+                </div>
+            </section>
+            <section id="skills">
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <!--radio buttons end-->
+                        <!--slide images start-->
+                        <div class="slide first">
+                            <h1>Front-end skills</h1>
+                            <div class="container">
+                                <img src="img/html5.png" alt="">
+                                <img src="img/javascript.png" alt="">
+                                <img src="img/css.png" alt="">
+                                <img src="img/sass.png" alt="">
+                            </div>  
+                        </div>
+                        <div class="slide">
+                            <h1>Back-end technologies</h1>
+                            <div class="container">
+                                <img src="img/php.png" alt="">
+                                <img src="img/mysql.png" alt="">
+                                <img src="img/csharp.png" alt="">
+                                <img src="img/java.png" alt="">
+                            </div> 
+                        </div>
+                        </div>
+                        <!--slide images end-->
+                        <!--automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
+            </section>
+            <section id="socials">
+                <a href="https://www.facebook.com/dawid.chwist.3" target="_blank"><div class="card"><img src="./img/facebook.png" /></div></a>
+                <a href="https://www.instagram.com/cookie.712/" target="_blank"><div class="card"><img src="./img/instagram.png" /></div></a>
+                <a href="https://github.com/Cookie712" target="_blank"><div class="card"><img src="./img/github.png" /></div></a>
+            </section>
+            <section id="contact">
+                <form action="./php/mail.php" method="post" novalidate>
+                    <input
+                        id="email"
+                        class="feedback-input"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                    <input
+                        id="title"
+                        class="feedback-input"
+                        type="text"
+                        name="title"
+                        placeholder="Title"
+                    />
+                    <textarea
+                        class="feedback-input"
+                        id="content"
+                        name="content"
+                        placeholder="Content"
+                    ></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer class="custom-shape-divider-top-1662049434">   
+        </footer>
+    </body>
+</html>

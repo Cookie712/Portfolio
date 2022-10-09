@@ -1,0 +1,59 @@
+/*parallax landing page styles*/
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fluffy);
+    background: linear-gradient(to bottom, var(--fluffy), var(--sky));
+}
+
+header::before {
+    margin-top: 100px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    background: linear-gradient(to top, var(--sky), transparent);
+    z-index: 11;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+header img#sun {
+    mix-blend-mode: screen;
+    transform: all 3s linear;
+    z-index: 6;
+}
+
+header img#mountains-front {
+    z-index: 9;
+}
+
+header img#mountains-behind {
+    z-index: 7;
+}
+
+header .logo-text {
+    position: absolute;
+    color: var(--violet);
+    font-size: 6rem;
+    z-index: 8;
+    background-image: linear-gradient(to top, var(--violet), var(--blue));
+    right: -350px;
+    white-space: nowrap;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
